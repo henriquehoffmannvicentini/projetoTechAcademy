@@ -1,37 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script>
-        function validateForm(event) {
-            const emailInput = document.getElementById('email').value;
-            if (!emailInput.includes('e-mail incorreto')) {
-                alert('Por favor, insira um email válido contendo "@"');
-                event.preventDefault(); // Impede o envio do formulário
-            }
-        }
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>the fallen crown</title>
+    <link rel="stylesheet" href="contato.css" />
+    <link rel="stylesheet" href="style.css" />
+
 </head>
 <body>
-    <h1>formulario</h1>
-    <form action="/submit" method="post" onsubmit="validateForm(event)">
-        <label for="name">Nome:</label>
-        <input type="text" id="name" name="name" required>
-        <br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <br><br>
-        <label>Gênero:</label>
-        <input type="radio" id="male" name="gender" value="male" required>
-        <label for="male">Masculino</label>
-        <input type="radio" id="female" name="gender" value="female" required>
-        <label for="female">Feminino</label>
-        <input type="radio" id="other" name="gender" value="other" required>
-        <label for="other">Outro</label>
-        <br><br>
-        <button type="submit">Enviar</button>
-    </form>
+  <header>
+    <img src="the_fallen_crown_logo_transparent.png" alt="logo" height="100" />
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="sobre.html">SOBRE</a>
+      <a href="galeria.html">GALERIA DE FOTOS</a>
+      <a href="contato.html">CONTATO</a>
+      <a href="jogar.html" class="btn-jogar">JOGAR</a>
+    </nav>
+  </header>
+
+        <main>
+            <script>
+                function validateForm(event) {
+                    const emailInput = document.getElementById('email').value;
+                    if (!emailInput.includes('e-mail incorreto')) {
+                        alert('Por favor, insira um email válido contendo "@"');
+                        event.preventDefault(); 
+                    } else {    
+                        alert('Formulário enviado com sucesso!');
+                        
+                    }
+                }
+            </script>
+        </head>
+        <body>
+            <h1>formulario</h1>
+            <form action="/submit" method="post" onsubmit="validateForm(event)">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" name="phone"  required>
+                <br><br>
+                <label>Gênero:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Masculino</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Feminino</label>
+                <input type="radio" id="other" name="gender" value="other" required>
+                <label for="other">Outro</label>
+                <br><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </main>
+
+
+
+
+
+  <footer>
+    <img src="image.png" alt="" />
+    <div>
+      <a href="#" style="color:white; margin: 0 10px;">Facebook</a>
+      <a href="#" style="color:white; margin: 0 10px;">Instagram</a>
+      <a href="#" style="color:white; margin: 0 10px;">YouTube</a>
+    </div>
+    <p>Desenvolvido por henrique hoffmann</p>
+  </footer>
 </body>
 </html>
