@@ -1,12 +1,12 @@
 h1{
     text-align: center;
     font-family: Tahoma, arial;
-    color: white;
+    color: #9d9c9c;
     margin-top: 20px;
 }
 form{
     width: 800px;
-    background-color: #bea6a6;
+    background-color: #ccc;
     margin: 30px auto;
     box-shadow: 0 0 10px #ccc;
     padding: 20px;
