@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validateForm(event) {
+            const emailInput = document.getElementById('email').value;
+            if (!emailInput.includes('e-mail incorreto')) {
+                alert('Por favor, insira um email válido contendo "@"');
+                event.preventDefault(); // Impede o envio do formulário
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>formulario</h1>
+    <form action="/submit" method="post" onsubmit="validateForm(event)">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label>Gênero:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Masculino</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Feminino</label>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Outro</label>
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
