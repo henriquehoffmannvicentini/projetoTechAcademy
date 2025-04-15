@@ -6,6 +6,7 @@
   <title>the fallen crown</title>
     <link rel="stylesheet" href="contato.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
 </head>
 <body>
@@ -25,12 +26,14 @@
                 function validateForm(event) {
                     const emailInput = document.getElementById('email').value;
                     if (!emailInput.includes('e-mail incorreto')) {
-                        alert('Por favor, insira um email válido contendo "@"');
+                        alert('formaulario enviado com sucesso!');
                         event.preventDefault(); 
-                    } else {    
-                        alert('Formulário enviado com sucesso!');
-                        
+                    } 
+                    else {
+                        alert('e-mail incorreto!');
+                        event.preventDefault(); 
                     }
+
                 }
             </script>
         </head>
@@ -62,14 +65,18 @@
 
 
 
-  <footer>
-    <img src="image.png" alt="" />
-    <div>
-      <a href="#" style="color:white; margin: 0 10px;">Facebook</a>
-      <a href="#" style="color:white; margin: 0 10px;">Instagram</a>
-      <a href="#" style="color:white; margin: 0 10px;">YouTube</a>
-    </div>
-    <p>Desenvolvido por henrique hoffmann</p>
-  </footer>
+
+        <footer>
+          <div>
+            <h2>the fallen crown</h2>
+            <p>jogue e se divirta.</p>
+            <div class="social-media">
+              <a href="https://www.facebook.com"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></i></a>
+              <a href="https://www.instagram.com"> <i class="fa-brands fa-instagram" style="color: #ffffff;"></i></i></a>
+              
+            </div>
+          </div>
+          <p>Desenvolvido por henrique hoffmann</p>
+        </footer>
 </body>
 </html>

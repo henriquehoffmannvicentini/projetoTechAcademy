@@ -1,7 +1,15 @@
+body{
+    background-image: url(projectoTechAcademy/images/ChatGPT\ Image\ 11\ de\ abr.\ de\ 2025\,\ 16_47_09.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
 h1{
     text-align: center;
     font-family: Tahoma, arial;
-    color: #9d9c9c;
+    color: #fff6f6;
     margin-top: 20px;
 }
 form{
@@ -40,3 +48,10 @@ form{
         background-color: #45a049;
     }
 }
+
+footer{
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}	
