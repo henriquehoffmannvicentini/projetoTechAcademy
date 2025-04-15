@@ -6,10 +6,8 @@
   <title>the fallen crown</title>
     <link rel="stylesheet" href="style.css" />
     <head>
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     
 
@@ -38,8 +36,10 @@
   </script>
 
  
-  <header>
-    <img src="projectoTechAcademy/images/the_fallen_crown_logo_transparent.png" alt="logo" height="100" />
+  <header data-aos="fade-right"
+  data-aos-offset="300"
+  data-aos-easing="ease-in-sine">
+    <img  src="projectoTechAcademy/images/the_fallen_crown_logo_transparent.png" alt="logo" height="100" />
     <nav>
       <a href="index.html">HOME</a>
       <a href="sobre.html">SOBRE</a>
@@ -49,14 +49,14 @@
     </nav>
   </header>
 
-  <div class="hero">
+  <div class="hero" data-aos="fade-right">
     <h1>the fallen crown</h1>
     
     
   </div>
 
   <div class="section1">
-    <div class="texto">
+    <div data-aos="fade-up" class="texto">
       <div>
     <h2>sobre o jogo</h2>
     <p>the fallen crown e um jogo plataforma 2d cheio de aventuras e desafios <br>
@@ -70,7 +70,7 @@
   
 
   <footer>
-    <div class="footer-content">
+    <div data-aos="fade-left" class="footer-content">
       <h2>the fallen crown</h2>
       <p>jogue e se divirta.</p>
       <div class="social-media">
@@ -81,7 +81,17 @@
     </div>
     <p>Desenvolvido por henrique hoffmann</p>
   </footer>
+
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
-<style>
+
+
+
   
