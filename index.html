@@ -15,6 +15,29 @@
 
 </head>
 <body>
+  <div class="mobile-menu">
+    <button class="menu-toggle">
+      <i class="fa fa-bars"></i>
+    </button>
+    <nav class="mobile-nav">
+      <a href="index.html">HOME</a>
+      <a href="sobre.html">SOBRE</a>
+      <a href="galeria.html">GALERIA DE FOTOS</a>
+      <a href="contato.html">CONTATO</a>
+      <a href="jogar.html" class="btn-jogar">JOGAR</a>
+    </nav>
+  </div>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobileNav = document.querySelector('.mobile-nav');
+
+    menuToggle.addEventListener('click', () => {
+      mobileNav.classList.toggle('active');
+    });
+  </script>
+
+ 
   <header>
     <img src="projectoTechAcademy/images/the_fallen_crown_logo_transparent.png" alt="logo" height="100" />
     <nav>
@@ -39,7 +62,7 @@
     <p>the fallen crown e um jogo plataforma 2d cheio de aventuras e desafios <br>
        em buscar de levar wick ate a coroa de seu reino e disputar com seu irmao mais velho todo o reino de  eldoria</p>
   </div>
-    <img src="projectoTechAcademy/images/print jogo .png" alt="Imagem do jogo" />
+    <img src="projectoTechAcademy/images/the_fallen_crown_logo_transparent.png" alt="Imagem do jogo" />
     <a href="#" class="btn-saiba">jogar</a>
     </div>
   </div>
@@ -51,8 +74,8 @@
       <h2>the fallen crown</h2>
       <p>jogue e se divirta.</p>
       <div class="social-media">
-        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></i></a>
-        <a href="https://www.instagram.com"> <i class="fa-brands fa-instagram" style="color: #ffffff;"></i></i></a>
+        <a href="https://github.com/henriquehoffmannvicentini"><i class="fa-brands fa-github" style="color: #ffffff;"></i></i></a>
+        <a href="https://www.instagram.com/henrique__hoffmann/"> <i class="fa-brands fa-instagram" style="color: #ffffff;"></i></i></a>
         
       </div>
     </div>
