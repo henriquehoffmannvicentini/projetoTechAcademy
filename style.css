@@ -101,3 +101,62 @@ body {
     
     margin-top: 10px;
   }
+
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .menu-toggle {
+      display: block;
+      background-color: #2e2d30;
+      color: white;
+      border: none;
+      font-size: 20px;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    nav {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    nav a {
+      margin: 5px 0;
+    }
+
+    .menu-toggle.active + nav {
+      display: flex;
+    }
+
+    .hero {
+      height: 500px;
+      padding-top: 20px;
+      font-size: 14px;
+    }
+
+    .section1 {
+      padding: 20px 10px;
+    }
+
+    .section1 .texto {
+      font-size: 18px;
+    }
+
+    .btn-saiba, .btn-jogar-red {
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+
+    footer {
+      padding: 20px;
+    }
+
+    .social-media {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
