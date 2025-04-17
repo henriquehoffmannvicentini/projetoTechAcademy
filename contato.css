@@ -1,0 +1,57 @@
+body{
+    background-image: url(projectoTechAcademy/images/ChatGPT\ Image\ 11\ de\ abr.\ de\ 2025\,\ 16_47_09.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+h1{
+    text-align: center;
+    font-family: Tahoma, arial;
+    color: #fff6f6;
+    margin-top: 20px;
+}
+form{
+    width: 800px;
+    background-color: #0000009d ;
+    margin: 30px auto;
+    box-shadow: 0 0 10px #0b0b0b;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Tahoma, arial;
+    input, textarea{
+        border: 1px solid #9d9c9c;
+        border-radius: 10px;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .erro{
+        color: red;
+        font-weight: bold;
+        margin: 10px;
+    }
+    label{
+        margin: 5px 0;
+        display: block;
+    }
+    button{
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: #45a049;
+    }
+}
+
+footer{
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}	
