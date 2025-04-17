@@ -11,6 +11,27 @@
 
 </head>
 <body>
+  <div class="mobile-menu">
+    <button class="menu-toggle">
+      <i class="fa fa-bars"></i>
+    </button>
+    <nav class="mobile-nav">
+      <a href="index.html">HOME</a>
+      <a href="sobre.html">SOBRE</a>
+      <a href="galeria.html">GALERIA DE FOTOS</a>
+      <a href="contato.html">CONTATO</a>
+      <a href="jogar.html" class="btn-jogar">JOGAR</a>
+    </nav>
+  </div>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobileNav = document.querySelector('.mobile-nav');
+
+    menuToggle.addEventListener('click', () => {
+      mobileNav.classList.toggle('active');
+    });
+  </script>
   <header data-aos="fade-right"
   data-aos-offset="300"
   data-aos-easing="ease-in-sine">

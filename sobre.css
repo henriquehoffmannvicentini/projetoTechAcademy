@@ -1,65 +1,132 @@
-body{
+/* Fundo */
+body {
     background-image: url(images/ChatGPT\ Image\ 11\ de\ abr.\ de\ 2025\,\ 16_47_09.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-
-
-.sobre-mim {
+    margin: 0;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  
+  /* Seções principais */
+  .sobre-mim, .sobre-jogo {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 20px;
-}
-
-.texto-mim{
-    h2{
-        text-align: center;
-        font-family: Tahoma, arial;
-        color: #ffffff;
-        margin-top: 30px;
-        text-transform: uppercase;
-    }
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  /* Texto sobre mim */
+  .texto-mim {
     width: 50%;
     padding: 50px;
-    font-family: Tahoma, arial;
     color: #ffffff;
     font-size: 20px;
-}
-
-    .sobre-jogo{
-        display: flex;
-        flex-direction: row; 
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-
-    }
-    .texto-jogo{
-        h2{
-            text-align: center;
-            font-family: Tahoma, arial;
-            color: #fff6f6;
-            margin-top: 20px;
-            text-transform: uppercase;
-        }
-        width: 50%;
-        padding: 20px;
-        font-family: Tahoma, arial;
-        color: #fff6f6;
-        font-size: 20px;
-    }
-        .imagem-mim{
-       transform: rotate3d(0, 1, 0, 180deg);
-        }
-
-footer{
+  }
+  
+  .texto-mim h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 30px;
+    text-transform: uppercase;
+  }
+  
+  /* Texto sobre o jogo */
+  .texto-jogo {
+    width: 50%;
+    padding: 20px;
+    color: #fff6f6;
+    font-size: 20px;
+  }
+  
+  .texto-jogo h2 {
+    text-align: center;
+    color: #fff6f6;
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
+  
+  /* Imagens */
+  .imagem-mim img,
+  .imagem-jogo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+  
+  .imagem-mim {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+  
+  /* Footer */
+  footer {
     background-color: #000000;
     color: white;
     text-align: center;
     padding: 10px 0;
-}
-
+  }
+  
+  /* Menu Mobile */
+  .mobile-menu {
+    display: none;
+    padding: 1rem;
+    background-color: #000;
+  }
+  
+  .menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  .mobile-nav {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background: #111;
+    padding: 1rem;
+  }
+  
+  .mobile-nav.active {
+    display: flex;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .sobre-mim, .sobre-jogo {
+      flex-direction: column;
+      text-align: center;
+      padding: 1rem;
+    }
+  
+    .imagem-mim, .imagem-jogo {
+      order: -1;
+      margin-bottom: 1rem;
+    }
+  
+    .texto-mim, .texto-jogo {
+      width: 100%;
+      padding: 1rem;
+    }
+  
+    .texto-mim h2, .texto-jogo h2 {
+      font-size: 1.8rem;
+    }
+  
+    .texto-mim p, .texto-jogo p {
+      font-size: 1rem;
+    }
+  
+    header nav {
+      display: none;
+    }
+  
+    .mobile-menu {
+      display: block;
+    }
+  }
+  

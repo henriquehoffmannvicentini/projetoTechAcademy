@@ -8,6 +8,18 @@ main{
     background-repeat: no-repeat;
     background-position: center;
 }
+.galeria{
+  text-transform: uppercase;
+  text-align: center;
+  h1{
+    padding: 30px;
+    font-size: 34px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  background-color: #2e2d30;
+  
+  }
+}
 
 .fotos {
   display: flex;
